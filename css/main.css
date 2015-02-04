@@ -104,8 +104,8 @@ button, input, optgroup, select, textarea {
     margin: 0 auto;
 }
 
-.login-panel__checkbox
- {
+.login-panel__checkbox,
+.login-panel__login-details {
     display: none;
 }
 
