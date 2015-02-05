@@ -1,4 +1,5 @@
-document.domain = "barc.com";
+document.domain = 'dc.akqa.com';
+
     
 var controls = (function() {
     'use strict';    
