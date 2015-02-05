@@ -26,7 +26,9 @@ var controls = (function() {
 
         _expandLogin = function() {
             _cache.hiddenSignInEl.style.display = 'block';
-            console.log(expandCBs[0]());
+            expandCBs.forEach(function(cb) {
+                cb();
+            });
         },
 
         _onExpandLogin = function(callback) { 
