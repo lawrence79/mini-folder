@@ -1,9 +1,10 @@
 document.domain = "barc.com";
     
-var signiniFrame = (function() {
+var controls = (function() {
     'use strict';    
     
     var _cache = {},
+        expandCBs = [],
         BCUS = window.parent.BCUS,
         
         _init = function() {
@@ -25,13 +26,19 @@ var signiniFrame = (function() {
 
         _expandLogin = function() {
             _cache.hiddenSignInEl.style.display = 'block';
-            BCUS.HeaderMenu.loginExpanded();
+            // for each here.
+        },
+
+        _onExpandLogin = function(callback){ 
+            this.expandCBs.push(callback); 
         };
+
     return {
-        init: _init
+        init: _init,
+        onExpandLogin: _onExpandLogin
     };
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-    signiniFrame.init();
+    controls.init();
 });
