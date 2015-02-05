@@ -30,6 +30,7 @@ var controls = (function() {
         },
 
         _onExpandLogin = function(callback){ 
+            console.log('called');
             this.expandCBs.push(callback); 
         };
 
