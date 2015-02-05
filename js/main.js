@@ -26,12 +26,12 @@ var controls = (function() {
 
         _expandLogin = function() {
             _cache.hiddenSignInEl.style.display = 'block';
-            // for each here.
+            console.log(expandCBs[0]());
         },
 
-        _onExpandLogin = function(callback){ 
-            console.log('called');
-            this.expandCBs.push(callback); 
+        _onExpandLogin = function(callback) { 
+           console.log(expandCBs);
+           expandCBs.push(callback); 
         };
 
     return {
@@ -40,6 +40,5 @@ var controls = (function() {
     };
 })();
 
-document.addEventListener('DOMContentLoaded', function() {
-    controls.init();
-});
+controls.init();
+
