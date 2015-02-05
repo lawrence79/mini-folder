@@ -6,6 +6,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    margin-top: 5px;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -58,17 +59,17 @@ button, input, optgroup, select, textarea {
    Author's custom styles
    ========================================================================== */
 
-.bcus-navigation__sign-in-container {
+.bcus-navigation__iframe-container {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.login-panel {
+.inner-login-panel {
     background-color: #fff;
     font-size: 12px;
-    left: 0;
     padding: 0;
     text-align: left;
-    top: 67px;
     width: 100%;
     z-index: 1010;
 }
@@ -88,7 +89,7 @@ button, input, optgroup, select, textarea {
     margin: 0 auto;
     padding: 14px 0 10px;
     text-transform: uppercase;
-    width: 67%;
+    width: 87%;
 }
 .login-panel__input {
     border: none;
@@ -98,7 +99,7 @@ button, input, optgroup, select, textarea {
     display: block;
     font-size: 14px;
     height: 30px;
-    width: 65%;
+    width: 85%;
     padding-top: 5px;
     padding-left: 10px;
     margin: 0 auto;
@@ -112,7 +113,7 @@ button, input, optgroup, select, textarea {
 .login-panel__button {
     display: block;
     margin: 0 auto;
-    width: 67%;
+    width: 87%;
 }
 .login-panel__link {
     color: #00a1e4;
@@ -124,7 +125,7 @@ button, input, optgroup, select, textarea {
     display: block;
     margin: 0 auto;
     padding: 20px 16px;
-    width: 67%;
+    width: 87%;
 }
 .login-panel__checkbox:checked + .login-panel__label--checkbox:before {
     content: "✔";
@@ -144,7 +145,7 @@ button, input, optgroup, select, textarea {
 .login-panel__forgot-username-password, .new-cardmember__application-info {
     display: block;
     margin: 20px auto;
-    width: 67%;
+    width: 87%;
 }
 .login-panel__forgot-username-password {
     margin-top: 0;
