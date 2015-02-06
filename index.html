@@ -15,28 +15,28 @@
     <div class="bcus-navigation__iframe-container">
         <div class="inner-login-panel">
             <span class="login-panel__fieldset">
-                <label for="login" class="login-panel__fieldset-item login-panel__label">Cardmember Sign In</label>
-                <input type="text" class="login-panel__input" placeholder="Enter your username" />
+                <label for="login-username" class="login-panel__fieldset-item login-panel__label">Cardmember Sign In</label>
+                <input id="login-username" type="text" class="login-panel__input" placeholder="Enter your username" />
                 <div class="login-panel__login-details">
                     <span class="login-panel__fieldset-password">
-                        <label for="login" class="login-panel__fieldset-item login-panel__label">Password</label>
-                        <input type="text" class="login-panel__input" placeholder="Enter your password" />
+                        <label for="login-password" class="login-panel__fieldset-item login-panel__label">Password</label>
+                        <input id="login-password" type="text" class="login-panel__input" placeholder="Enter your password" />
 
-                        <input type="checkbox" class="login-panel__checkbox" />
-                        <label for="login" class="login-panel__label--checkbox">Remember username?</label>
+                        <input id="login-remember" type="checkbox" class="login-panel__checkbox" />
+                        <label for="login-remember" class="login-panel__label--checkbox">Remember username?</label>
                         <a href="#" class="login-panel__link login-panel__forgot-username-password">
                             Forgot Username or Password?
                         </a>
                     </span>
-                    <button class="bcus-button bcus-button--blue login-panel__button login-panel__button-login" alt="Sign into your Barclaycard account">Log In</button> 
+                    <button id="login-submit" class="bcus-button bcus-button--blue login-panel__button login-panel__button-login" alt="Sign into your Barclaycard account">Log In</button> 
                 </div>
             </span>
             <span class="new-cardmember__application-info login-panel__fieldset-item">
                 Already applied? <a href="#" class="login-panel__link" alt="Check the status of your application">Check your application status</a>.
             </span>
             <span class="login-panel__fieldset new-cardmember">
-                <label for="" class="login-panel__fieldset-item login-panel__label">New Cardmembers</label>
-                <button class="bcus-button bcus-button--blue login-panel__button" alt="Set up your Barclaycard online account">Set Up Online Account</button>
+                <label for="new-cardmember" class="login-panel__fieldset-item login-panel__label">New Cardmembers</label>
+                <button id="new-cardmember" class="bcus-button bcus-button--blue login-panel__button" alt="Set up your Barclaycard online account">Set Up Online Account</button>
             </span>
         </div>
     </div>
