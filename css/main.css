@@ -120,7 +120,7 @@ button, input, optgroup, select, textarea {
     display: inline;
 }
 .login-panel__link {
-    color: #00a1e4;
+    color: #0079ca;
 }
 .login-panel__checkbox {
     padding-bottom: 20px;
@@ -169,7 +169,7 @@ button, input, optgroup, select, textarea {
     border-top: 1px solid #cccccc;
 }
 .bcus-button--blue {
-    background-color: #00a1e4;
+    background-color: #0079ca;
     border-radius: 3px;
     color: #ffffff;
     padding: 12px 30px;
