@@ -1,13 +1,10 @@
-document.domain = 'dc.akqa.com';
-
-    
 var controls = (function() {
-    'use strict';    
-    
+    'use strict';
+
     var _cache = {},
         expandCBs = [],
         BCUS = window.parent.BCUS,
-        
+
         _init = function() {
             _addCache();
             _setupEvents();
@@ -22,7 +19,7 @@ var controls = (function() {
 
         _setupEvents = function() {
             _cache.usernameInput.addEventListener('click', _expandLogin);
-            
+
         },
 
         _expandLogin = function() {
@@ -32,9 +29,9 @@ var controls = (function() {
             });
         },
 
-        _onExpandLogin = function(callback) { 
+        _onExpandLogin = function(callback) {
            console.log(expandCBs);
-           expandCBs.push(callback); 
+           expandCBs.push(callback);
         };
 
     return {

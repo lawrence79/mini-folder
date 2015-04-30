@@ -76,8 +76,7 @@ button, input, optgroup, select, textarea {
 .login-panel__fieldset {
     display: block;
     margin: 0 auto;
-    padding-bottom: 20px;
-    width: 100%;
+    padding: 0 20px 20px;
 }
 .login-panel__fieldset:first-child {
     border-bottom: 1px solid #cccccc;
@@ -102,7 +101,7 @@ button, input, optgroup, select, textarea {
     width: 85%;
     padding-top: 5px;
     padding-left: 10px;
-    margin: 0 auto;
+    margin: 5px auto 0 auto;
 }
 
 .login-panel__checkbox,
@@ -114,6 +113,11 @@ button, input, optgroup, select, textarea {
     display: block;
     margin: 0 auto;
     width: 87%;
+    vertical-align: middle;
+}
+.login-panel__button-image {
+    padding-right: 5px;
+    display: inline;
 }
 .login-panel__link {
     color: #00a1e4;
@@ -123,8 +127,8 @@ button, input, optgroup, select, textarea {
 }
 .login-panel__label--checkbox {
     display: block;
-    margin: 0 auto;
-    padding: 20px 16px;
+    margin: 5px auto;
+    padding: 20px 20px;
     width: 87%;
 }
 .login-panel__checkbox:checked + .login-panel__label--checkbox:before {
@@ -139,16 +143,27 @@ button, input, optgroup, select, textarea {
     text-align: center;
     font-weight: normal;
     margin-right: 8px;
-    border: 1px solid #ebeaeb;
+    border: 1px solid #b7b7b7;
     background-color: white;
 }
+
+.new-cardmember__application-info-container {
+    display: block;
+    margin: 0 auto;
+    padding: 0px 20px 0px;
+}
+
 .login-panel__forgot-username-password, .new-cardmember__application-info {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
     width: 87%;
 }
+
 .login-panel__forgot-username-password {
     margin-top: 0;
+}
+#new-cardmember {
+    margin-top: 10px;
 }
 .new-cardmember {
     border-top: 1px solid #cccccc;
@@ -211,7 +226,7 @@ button, input, optgroup, select, textarea {
 .clearfix:before, .clearfix:after {
     content: " ";
     /* 1 */
-    
+
     display: table;
     /* 2 */
 }
@@ -242,7 +257,7 @@ button, input, optgroup, select, textarea {
         color: #000 !important;
         /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        
+
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -259,7 +274,7 @@ button, input, optgroup, select, textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    
+
     a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
@@ -271,7 +286,7 @@ button, input, optgroup, select, textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-    
+
     thead {
         display: table-header-group;
     }
